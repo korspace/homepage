@@ -7,16 +7,18 @@
 	  font-size: 20pt;
 	}
 	.name {
-		font-size: 40pt;
+		font-size: 34pt;
 	}
 	.intro{
 		font-size: 12pt;
-	  width: 100%;
 	}
-	.timeline {
-		width: 100%;
+	.prevWorks, .nextWorks {
+		display: none;
 	}
-	.other {
+	main {
+	  padding: 0;
+	}
+	.other, .timeline {
 		padding: 0 4%;
 	  padding-left: 3em;
 	  width: 100%;

@@ -1,9 +1,15 @@
+@keyframes move-forever{
+    0%{transform: translate(1920px , 0%)}
+    100%{transform: translate(0px , 0%)}
+}
+
 body {
 	margin: 3em;
 	padding: 0;
   font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
   color: #222;
-  box-shadow: 0 10px 100px 0 rgba(34,36,38,.1);
+  box-shadow: 0 10px 80px 0 rgba(34,36,38,.1);
   padding-bottom: 3em;
 }
 
@@ -13,6 +19,19 @@ h1 {
   font-weight: 400;
 	margin: 0;
   margin-bottom: 0.5em;
+}
+main a {
+	text-decoration: none;
+	color: #554764;
+	border-bottom: 0.5px solid #554764;
+	transition: 0.6s ease;
+}
+main a:hover{
+	color: #865194;
+}
+main a:visited {
+	color: #A780B1;
+	border-bottom: 0.5px solid #A780B1;
 }
 
 
@@ -82,15 +101,14 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #E0E0E0;
-  text-shadow: 0px 0px 1px rgb(157, 157, 157);
+  color: #bebebe;
 	position: absolute;
   height: 100%;
 }
-.prevWorks {left: 2em;}
-.nextWorks {right: 2em;}
+.prevWorks {left: 1%;}
+.nextWorks {right: 1%;}
 .prevWorks p, .nextWorks p {
-  font: 60pt MontserratLight, sans-serif;
+  font-size: 28pt;
 }
 
 
@@ -119,17 +137,22 @@ header .bg {
   border-bottom: 3px solid #fff;
 }
 .name {
-	font-size: 54pt;
+	font-size: 48pt;
   font-weight: 700;
   margin: 0;
   margin-top: 0.2em;
 }
 .intro{
-  margin-left: 0.5em;
-	font-size: 13pt;
+	font-size: 14pt;
+	color: #666;
   font-weight: 300;
-  width: 75%;
+  width: 88%;
+	padding: 0 6%;
+	margin-bottom: 3em;
+	position: relative;
+	text-align: justify;
 }
+.intro b {font-weight: 400;}
 
 
 /*_________________ SOCIAL NETWORKS ______________________*/
@@ -162,11 +185,12 @@ header .bg {
 main {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 3%;
 }
 .timeline {
   width: 60%;
-  padding: 0 4%;
-  padding-left: 3em;
+  padding: 0 7%;
+  padding-left: 2em;
   box-sizing: border-box;
 }
 .edu {
@@ -194,7 +218,7 @@ main {
 .goodgirl {color: #c6c6c6;}
 .other {
   box-sizing: border-box;
-  padding: 0 2em;
+  padding: 0 6%;
   padding-left: 1em;
   width: 40%;
 }
