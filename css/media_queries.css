@@ -1,0 +1,26 @@
+@media screen and (max-width: 720px) {
+	body {
+		margin: 0;
+	}
+	.resume {
+	  margin-left: 0.5em;
+	  font-size: 20pt;
+	}
+	.name {
+		font-size: 34pt;
+	}
+	.intro{
+		font-size: 12pt;
+	}
+	.prevWorks, .nextWorks {
+		display: none;
+	}
+	main {
+	  padding: 0;
+	}
+	.other, .timeline {
+		padding: 0 4%;
+	  padding-left: 3em;
+	  width: 100%;
+	}
+}
